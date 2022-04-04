@@ -12,15 +12,31 @@ let questions = [
 },{
     type: "input",
     message: "Describe your repository",
-    name: "description"
+    name: "Description"
+},{
+    type: "input",
+    message:"How can users install this app?",
+    name: "Installation"
+},{
+    type: "input",
+    message:"How is this application used?",
+    name: "Usage"
+},{
+    type: "input",
+    message:"Who can contribute to your project?",
+    name: "Contributing"
+},{
+    type: "input",
+    message:"What are instructions to test this project?",
+    name: "Tests"
 },{
     type: "input",
     message: "What is your GitHub username?",
     name: "userName",
-}, {
+},{
     type: "input",
     message:"What is your email?",
-    name: "email"
+    name: "Email"
 },{
     type: "input",
     message:"What is your GitHub link?",
