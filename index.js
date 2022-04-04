@@ -2,8 +2,6 @@ const fileGenerator = require('./utils/fileGenerator');
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const writeFileAsync = util.promisify(fs.writeFile)
-
 //questions array
 
 let questions = [
@@ -71,4 +69,5 @@ inquirer.prompt(questions)
         console.log('complete')
     })
 });
+
 

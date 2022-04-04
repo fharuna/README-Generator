@@ -1,9 +1,9 @@
 
     ##Title 
-    fdkdsf
+    README Generator
     
     ## Description 
-    dsajhe
+    A Way to help users create a Readme file efficiently 
 
     ## Table of Contents
     1. [Installation](#Installation)
@@ -14,22 +14,22 @@
     6. [Questions](#Questions)
 
     ## Installation 
-    eshjer
+    Download the github folder
 
     ## Usage 
-    ejherjher
+    It can be used in your terminal
 
     ## License 
     MIT
 
     ## Contributing 
-    edjherj
+    Anyone can contribute to this Repository
 
     ## Tests
-     djhej'
+     You can test it by using node in your integrated terminal
 
     ## Questions
     undefined
-    ejhe
-    ejhejh
+    https://github.com/fharuna/README-Generator
+    haruna.fati@gmail.com
     
