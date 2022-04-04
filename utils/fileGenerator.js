@@ -1,9 +1,10 @@
-
+function fileGenerator(response) {
+    return `
     ##Title 
-    fdkdsf
+    ${response.title}
     
     ## Description 
-    dsajhe
+    ${response.Description}
 
     ## Table of Contents
     1. [Installation](#Installation)
@@ -14,22 +15,26 @@
     6. [Questions](#Questions)
 
     ## Installation 
-    eshjer
+    ${response.Installation}
 
     ## Usage 
-    ejherjher
+    ${response.Usage}
 
     ## License 
-    MIT
+    ${response.License}
 
     ## Contributing 
-    edjherj
+    ${response.Contributing}
 
     ## Tests
-     djhej'
+     ${response.Tests}
 
     ## Questions
-    undefined
-    ejhe
-    ejhejh
-    
+    ${response.Questions}
+    ${response.GitHub}
+    ${response.Email}
+    `;
+
+}
+
+module.exports = fileGenerator;

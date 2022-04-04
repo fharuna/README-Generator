@@ -1,6 +1,8 @@
-var fileGenerator = require("./fileGenerator");
-var fs = require("fs");
-var inquirer = require("inquirer");
+const fileGenerator = require('./utils/fileGenerator');
+const fs = require('fs');
+const inquirer = require('inquirer');
+
+const writeFileAsync = util.promisify(fs.writeFile)
 
 //questions array
 
@@ -57,16 +59,16 @@ let questions = [
 ];
 
 // To write README file
-
 inquirer.prompt(questions)
-.then(function(response){
-    console.log(response);
-    
-    var content = fileGenerator(response);
-    
-    fs.writeFile("./README.md", content, function(err){
-        console.log("complete");
-    });
-});
 
+.then(response => {
+    console.log('response');
+    fs.writeFile('./README.md', fileGenerator(response),
+    error => {
+        if (error) {
+            console.log('Correct missing fields')
+        }
+        console.log('complete')
+    })
+});
 
